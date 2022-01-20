@@ -1,0 +1,649 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    width: 100%;
+    height: 100%;
+    color: #fff;
+}
+.homeContainer{
+    width: 100%;
+    background: #231741;
+    height: 100vh;
+}
+.bodyWrapper{
+    width: 80%;
+    margin: 0 auto;
+}
+ul{
+    list-style: none;
+}
+
+/*----------navbar css-------*/
+.navWrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+.logoWrapper{
+    width: 50px;
+}
+nav ul{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav ul li {
+    margin: 0 25px;
+    font-size: 16px;
+    font-weight: 300;
+    cursor: pointer;
+}
+.downarrow{
+    display: flex;
+    align-items: center;
+    margin-right: 40px;
+}
+.downarrow li{
+    margin-right: 5px;
+}
+.downarrow i{
+    margin-top: -5px;
+}
+
+
+/*-------home main css---------*/
+
+.mainContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: calc(100vh - 140px);
+}
+.homeDetail{
+    width: 60%;
+    height: 60vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.homeDetailHeader{
+    display: flex;
+    flex-direction: column;
+}
+.homeDetail h1{
+    font-size: 60px;
+    font-weight: 600;
+    
+}
+.homeDetail h4{
+    color: #ffa339;
+    font-size: 20px;
+    font-weight: 500;
+}
+.homeDetail p{
+    max-width: 70%;
+    font-size: 14px;
+    font-weight: 300;
+}
+.homeDetail button{
+    border:none;
+    border-radius: 5px;
+    background: #ff3d6b;
+    padding: 10px 30px;
+    width: 40%;
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+}
+.homeDetail button i{
+    background: inherit;
+    margin-left: 10px;
+    align-self: center;
+}
+.homeImage {
+    width: 40%;
+}
+.homeImage img{
+    height: 440px;
+    width: 440px; 
+}
+
+/*--------get in touch css-------*/
+.getInTouchWrapper{
+    width: 80%;
+    height: 100vh;
+    background: #fff;
+    color: #111;
+    margin:0px auto;
+}
+.getInTouchWrapper .heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 30%;
+}
+.getInTouchWrapper .heading h1{
+    color: #231741;
+    font-weight: 600;
+}
+.getInTouchWrapper .heading p{
+    width: 60%;
+    text-align: center;
+    margin-top:15px;
+    color: #555;
+}
+.getInTouchContent{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 70px;
+    height: 50%;
+}
+.getInTouchContent .features{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 2rem;
+}
+.getInTouchContent .features span{
+    display: flex;
+    align-items: center;
+}
+.getInTouchContent .features span img{
+    margin-right: 20px;
+}
+.getInTouchContent .features button{
+    padding: 10px 40px;
+    width: 80%;
+    border:none;
+    color: #fff;
+    font-weight: 600;
+    background: #5f6fbf;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+.getInTouchContent .features button i{margin-left: 10px;}
+.getInTouchContent .featuresImg{
+    height: 100%;
+}
+.getInTouchContent .featuresImg img{
+    height: 100%;
+}
+.hr{
+    height: 10px;
+    width: 90%;
+    background: #F6F6F6;
+    margin: 0 auto;
+    border-radius: 30px;
+}
+
+/*----------get calls css----------*/
+.getCallsWrapper{
+    width: 90%;
+    margin: 20px auto;
+    color: #000;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+.getCallsWrapper .heading{
+    text-align: center;
+}
+.getCallsWrapper .heading p{
+    color: #555;
+    font-size: 14px;
+}
+.getCallsWrapper .heading h2{
+    letter-spacing: 1px;
+    font-size: 30px;
+    font-weight: 500;
+    color: #231741;
+}
+.getCallsContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 30%;
+    margin: 50px auto;
+}
+.calenderContainer{
+    flex: 1; 
+    background: #fff4e8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 10px;
+    border:1px solid rgb(199, 199, 199);
+    border-radius: 10px;
+    height: 100%;
+    margin-right: 40px;
+}
+.calenderContainer p{
+    margin: 10px 0;
+    font-weight: 600;
+    max-width: 200px;
+    text-align: center;
+}
+.calenderContainer .flex{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.calenderContainer .flex div{
+    height: 100px;
+    width: 80px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10px;
+    border:1px solid #000;
+}
+.getCallsDetails{
+    flex:1;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.getCallsDetails h3{
+    font-size: 18px;
+    font-weight: 700;
+    color: #231741;
+}
+.getCallsDetails span{
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+.getCallsDetails span img{
+    margin-right: 10px;
+}
+
+/*------- email subscribe css-----*/
+.emailContainer{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    height: 35vh;
+}
+.getEmailDetails{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.getEmailDetails h3{
+    font-size: 16px;
+    font-weight: 700;
+    color:#231741
+}
+.getEmailDetails span{
+    font-size: 14px;
+}
+.emailMeDiv{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background: rgb(206, 223, 255);
+    border-radius: 10px;
+    margin-left: 100px;
+    padding: 50px 20px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.emailMeDiv p{
+    text-align: center;
+    width: 90%;
+}
+.emailMeDiv .emailInput{
+    border: 1px solid #231741;
+    width: 70%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+    background: #fff;
+}
+.emailMeDiv .emailInput input{
+    height: 100%;
+    width: calc(100% - 70px);
+    flex: 7;
+    border:none;
+    border-radius: 5px;
+    padding-left:10px ;
+}
+.emailMeDiv .emailInput input:focus{
+    outline: none;
+}
+.emailMeDiv .emailInput button{
+    height: 100%;
+    flex: 3;
+    border-radius: 0 5px 5px 0;
+    background: #231741;
+    color: #fff;
+    cursor: pointer;
+    border:none;
+}
+.getCallsWrapper .getStarted{
+    background: #5F6FBF;
+    width: 17rem;
+    height: 3rem;
+    border:none;
+    color: #fff;
+    font-weight: 700;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+/*----------talk to developers section-----*/
+.integratedContainer{
+    background: #FFF9FA;
+    width: 100%;
+    height: 80vh;
+    color: #231741;
+}
+.integratePageWrapper{
+    width: 70%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.integrateDetails{
+    height: 370px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.integrateDetails h1{
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+.integrateDetails .moreDetails{
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+}
+.integrateDetails .moreDetails span{
+    margin: 20px 0;
+    display: flex;
+}
+.integrateDetails .moreDetails span img{
+    margin-right: 10px;
+}
+.talkDeveloper{
+    width: 17rem;
+    height: 3rem;
+    border-radius: 5px;
+}
+.talkDeveloper button{
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    border:none;
+    background: #5F6FBF;
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.talkDeveloper button i{
+    margin-left: 10px;
+}
+.talkDeveloper p{
+    font-size: 12px;
+    text-align: center;
+}
+.integrateImg{
+    height: 370px;
+    width: 370px;
+}
+
+/*------- feature section------*/
+.featureSectionWrapper{
+    width: 90%;
+    height: 100vh;
+    margin: 0 auto;
+    color: #231741;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 150px;
+}
+.featuredService{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 100px;
+    margin: 70px 0;
+}
+.featuredService div{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.featuredService div img{
+    width: 3rem;
+    height: 3rem;
+}
+.featuredService div span{
+    font-weight: 700;
+    margin: 10px 0;
+}
+.featuredService div p{
+    font-size: 14px;
+    color: #555;
+}
+.featureButton{
+    width: 17rem;
+    height: 3rem;
+    background: #5F6FBF;
+    border-radius: 5px;
+}
+.featureButton button{
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    border:none;
+    background: inherit;
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.featureButton button i{
+    margin-left: 10px;
+}
+
+/*------------feed back section css------*/
+.feedbackSectionWrapper{
+    width: 100%;
+    height: 80vh;
+    background: #FFF9FA;
+    color: #271B46;
+}
+.feedBackContainer{
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.feedBackContainer .feedbackHeading{
+    text-align: center;
+    width: 750px;
+}
+.feedBackContainer .feedbackHeading h1{
+    font-size: 32px;
+    font-weight: 600;
+}
+.feedBackContainer .feedbackHeading p{
+    color: #666;
+}
+.feedBackContainer .userInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.feedBackContainer .userInfo img{
+    width: 100px;
+    height: 100px;
+}
+.feedBackContainer .userInfo span{
+    font-size: 20px;
+    font-weight: 600;
+}
+.feedBackContainer .userInfo p{
+    font-size: 14px;
+}
+.feedBackContainer .userInfo div i{
+    color:#FFA63F;
+}
+.feedBackContainer .feedbackContent{
+    width: 900px;
+    font-size: 24px;
+    text-align: center;
+    line-height: 40px;
+}
+
+/*--------------start free section css--------*/
+.startFreeWrapper{
+    width: 100%;
+    height: 336px;
+    background: chocolate;
+    position: relative;
+}
+.startFreeWrapper img{
+    height: 336px;
+    width: 100%;
+    object-fit: cover;
+}
+.startFreeContent{
+    height: 336px;
+    width: 100%;
+    position: absolute;
+    top: 0%;
+    color: #271B46;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.startFreeContent p{
+    font-size: 32px;
+    font-weight: 600;
+    color: #fff;
+}
+.startFreeContent button{
+    width: 224px;
+    height: 52px;
+    background: #FF3D6B;
+    border-radius: 5px;
+    border:none;
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+}
+.startFreeContent button i{
+    margin-left: 10px;
+}
+
+/*-------------footer------------*/
+.footerWrapper{
+    width: 90%;
+    height: 40vh;
+    margin: 0 auto;
+    color: #271B46;
+    margin-top: 100px;
+}
+.footerMenuList{
+    display: flex;
+    justify-content: space-between;
+}
+.footerMenu span{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px 0;
+}
+.footerMenu p{
+    font-size: 14px;
+    margin: 10px 0;
+    cursor: pointer;
+}
+.footerApps{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end
+}
+.footerApps img{
+    width: 156px;
+    height: 3rem;
+    margin: 20px 0;
+    cursor: pointer;
+}
+.footerLine{
+    color:#666;
+    width: 95%;
+    margin: 0 auto;
+}
+.footerCopyRight{
+    color: #271B46;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+}
+.footerSocial{
+    display: flex;
+}
+.footerCopyRight .footerSocial div{
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: #F1F1F1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin: 0 5px;
+}
+.footerCopyRight p{
+    font-size: 14px;
+    color: #666;
+}
+.footerTerms{
+    display: flex;
+}
+.footerTerms p{
+    margin-left: 50px;
+}
