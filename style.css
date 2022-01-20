@@ -14,7 +14,8 @@ body{
 .homeContainer{
     width: 100%;
     background: #231741;
-    height: 100vh;
+    height: 100%;
+    padding: 50px 0;
 }
 .bodyWrapper{
     width: 80%;
@@ -29,10 +30,13 @@ ul{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 30px 0;
+    margin-bottom: 30px;
 }
 .logoWrapper{
     width: 50px;
+}
+.navMenu{
+    display: none;
 }
 nav ul{
     color: #fff;
@@ -45,11 +49,13 @@ nav ul li {
     font-size: 16px;
     font-weight: 300;
     cursor: pointer;
+    transition: 0.5s all ease;
 }
 .downarrow{
     display: flex;
     align-items: center;
     margin-right: 40px;
+    position: relative;
 }
 .downarrow li{
     margin-right: 5px;
@@ -57,8 +63,32 @@ nav ul li {
 .downarrow i{
     margin-top: -5px;
 }
-
-
+.dropdown-content{
+    display: none;
+    position: absolute;
+    top: 30px;
+    left: 15px;
+    background-color: #f1f1f1;
+    color: #231741;
+    width: 150px;
+    padding: 10px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 9;
+    border-radius: 10px;
+    transition: 0.5s all ease-in-out;
+}
+.dropdown-content p{
+    padding: 10px;
+    cursor: pointer;
+}
+.dropdown-content p:hover{
+    background: rgb(219, 219, 219);
+}
+.show {
+    transition: 0.5s all ease-in;
+    display: block;
+}
 /*-------home main css---------*/
 
 .mainContainer{
@@ -66,11 +96,12 @@ nav ul li {
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: calc(100vh - 140px);
+    height: 100%;
+    /* height: calc(100vh - 140px); */
 }
 .homeDetail{
     width: 60%;
-    height: 60vh;
+    height: 500px;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -82,7 +113,6 @@ nav ul li {
 .homeDetail h1{
     font-size: 60px;
     font-weight: 600;
-    
 }
 .homeDetail h4{
     color: #ffa339;
@@ -90,8 +120,8 @@ nav ul li {
     font-weight: 500;
 }
 .homeDetail p{
-    max-width: 70%;
-    font-size: 14px;
+    width: 70%;
+    font-size: 16px;
     font-weight: 300;
 }
 .homeDetail button{
@@ -112,26 +142,34 @@ nav ul li {
 }
 .homeImage {
     width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .homeImage img{
     height: 440px;
     width: 440px; 
 }
+.homeImage .mobImg{
+    display: none;
+}
 
 /*--------get in touch css-------*/
 .getInTouchWrapper{
     width: 80%;
-    height: 100vh;
+    height: 90vh;
     background: #fff;
     color: #111;
-    margin:0px auto;
+    margin:20px auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 .getInTouchWrapper .heading{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: 30%;
 }
 .getInTouchWrapper .heading h1{
     color: #231741;
@@ -195,7 +233,7 @@ nav ul li {
     width: 90%;
     margin: 20px auto;
     color: #000;
-    height: 100vh;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -219,7 +257,8 @@ nav ul li {
     align-items: center;
     justify-content: center;
     width: 80%;
-    height: 30%;
+    height: 100%;
+    /* height: 35vh; */
     margin: 50px auto;
 }
 .calenderContainer{
@@ -238,7 +277,7 @@ nav ul li {
 .calenderContainer p{
     margin: 10px 0;
     font-weight: 600;
-    max-width: 200px;
+    width: 200px;
     text-align: center;
 }
 .calenderContainer .flex{
@@ -246,6 +285,7 @@ nav ul li {
     width: 100%;
     align-items: center;
     justify-content: space-evenly;
+    padding: 20px;
 }
 .calenderContainer .flex div{
     height: 100px;
@@ -256,7 +296,7 @@ nav ul li {
     justify-content: center;
     flex-direction: column;
     border-radius: 10px;
-    border:1px solid #000;
+    border:1px solid rgb(163, 163, 163);
 }
 .getCallsDetails{
     flex:1;
@@ -274,17 +314,22 @@ nav ul li {
     font-size: 14px;
     display: flex;
     align-items: center;
+    margin: 10px 0;
 }
 .getCallsDetails span img{
     margin-right: 10px;
 }
-
+.getStartedCall{
+    display: none;
+}
 /*------- email subscribe css-----*/
 .emailContainer{
     display: flex;
+    justify-content: space-between;
     width: 80%;
-    margin: 0 auto;
-    height: 35vh;
+    margin: 0px auto;
+    /* height: 35vh; */
+    height: 100%;
 }
 .getEmailDetails{
     flex: 1;
@@ -299,10 +344,13 @@ nav ul li {
 }
 .getEmailDetails span{
     font-size: 14px;
+    margin: 10px 0;
 }
 .emailMeDiv{
     flex: 1;
     display: flex;
+    /* height: 80%; */
+    margin: auto 0;
     flex-direction: column;
     background: rgb(206, 223, 255);
     border-radius: 10px;
@@ -360,8 +408,9 @@ nav ul li {
 .integratedContainer{
     background: #FFF9FA;
     width: 100%;
-    height: 80vh;
+    height: 100%;
     color: #231741;
+    padding: 40px 0;
 }
 .integratePageWrapper{
     width: 70%;
@@ -372,7 +421,7 @@ nav ul li {
     justify-content: space-between;
 }
 .integrateDetails{
-    height: 370px;
+    /* height: 370px; */
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -392,6 +441,9 @@ nav ul li {
 }
 .integrateDetails .moreDetails span img{
     margin-right: 10px;
+}
+.integrateMobImg{
+    display: none;
 }
 .talkDeveloper{
     width: 17rem;
@@ -426,13 +478,12 @@ nav ul li {
 /*------- feature section------*/
 .featureSectionWrapper{
     width: 90%;
-    height: 100vh;
-    margin: 0 auto;
+    height: 100%;
     color: #231741;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 150px;
+    margin: 100px auto;
 }
 .featuredService{
     display: grid;
@@ -499,7 +550,7 @@ nav ul li {
 }
 .feedBackContainer .feedbackHeading{
     text-align: center;
-    width: 750px;
+    width: 70%;
 }
 .feedBackContainer .feedbackHeading h1{
     font-size: 32px;
@@ -528,7 +579,7 @@ nav ul li {
     color:#FFA63F;
 }
 .feedBackContainer .feedbackContent{
-    width: 900px;
+    width: 90%;
     font-size: 24px;
     text-align: center;
     line-height: 40px;
@@ -580,7 +631,7 @@ nav ul li {
 /*-------------footer------------*/
 .footerWrapper{
     width: 90%;
-    height: 40vh;
+    height: 100%;
     margin: 0 auto;
     color: #271B46;
     margin-top: 100px;
@@ -646,4 +697,7 @@ nav ul li {
 }
 .footerTerms p{
     margin-left: 50px;
+}
+.mobcopyrightYear{
+    display: none;
 }

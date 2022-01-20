@@ -4,11 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
       href="//use.fontawesome.com/releases/v5.0.7/css/all.css"
     />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
     <title>Gumstack</title>
   </head>
   <body>
@@ -18,12 +19,20 @@
           <div class="logoWrapper">
             <img src="./Assets/logo-lite.svg" alt="gumstack logo" />
           </div>
+          <div class="navMenu"><i class="fas fa-bars fa-2x"></i></div>
           <nav>
             <ul>
-              <div class="downarrow">
-                <li>User Cases</li>
+              <div class="downarrow "
+              >
+                <li class="dropbtn" onclick="myFunction()">User Cases</li>
                 <i class="fas fa-sort-down"></i>
+              
+              <div id="myDropDown" class="dropdown-content">
+                <p>Retail</p>
+                <p>E-commerce</p>
+                <p>Sass</p>
               </div>
+            </div>
               <li>Developers</li>
               <li>Pricing</li>
               <li>Sign in</li>
@@ -46,7 +55,8 @@
             </button>
           </div>
           <div class="homeImage">
-            <img src="./Assets/homeImg.png" alt="" />
+            <img src="./Assets/homeImg.png" alt="" class="desktopImg"/>
+            <img src="./Assets/hero_mockup_mob.png" alt="" class="mobImg"/>
           </div>
         </div>
       </div>
@@ -132,6 +142,10 @@
           </span>
         </div>
       </div>
+      <button class="getStartedCall">
+        Let's get started
+        <i class="fas fa-arrow-right"></i>
+      </button>
       <div class="emailContainer">
         <div class="getEmailDetails">
           <h3>
@@ -173,6 +187,7 @@
       <div class="integratePageWrapper">
         <div class="integrateDetails">
           <h1>Integrate in under 5 minutes</h1>
+          <img src="./Assets/circle.png" alt="" class="integrateMobImg" />
           <div class="moreDetails">
             <span>
               <img src="./Assets/arrow.svg" alt="" />
@@ -349,11 +364,19 @@
             <div><i class="fab fa-linkedin-in"></i></div>
             <div><i class="fab fa-twitter"></i></div>
         </div>
-        <p>&copy; Copyright Gumstack Inc. 2020- All rights reserved</p>
+        <p class="copyrightYear">&copy; Copyright Gumstack Inc. 2020- All rights reserved</p>
         <div class="footerTerms">
             <p>Terms & Conditions</p>
             <p>Privacy Policy</p>
         </div>
-    </div>
+        <p class="mobcopyrightYear">&copy; Copyright Gumstack Inc. 2020- All rights reserved</p>
+      </div>
   </body>
+  <script>
+    let dropDown = document.getElementById('myDropDown');
+
+    const myFunction = ()=> {
+      dropDown.classList.toggle('show');
+    }
+  </script>
 </html>

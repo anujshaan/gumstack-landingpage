@@ -1,0 +1,275 @@
+@media (max-width: 1100px) {
+    .mainContainer{
+        flex-direction: column;
+        align-items: center;
+    }
+    .homeDetail{
+        width: 100%;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .homeDetailHeader{
+        text-align: center;
+    }
+    .homeDetail h1{
+        font-size: 45px;
+    }
+    .homeImage .desktopImg{
+        display: none;
+    }
+    .homeImage .mobImg{
+        display: block;
+        width: 342px;
+        height: 342px;
+    }
+    .getInTouchContent .features{
+        width: 100%;
+    }
+    .getInTouchContent .featuresImg{
+        display: none;
+    }
+    .getCallsContainer{
+        flex-direction: column;
+        height: 100%;
+        margin:0;
+    }
+    .calenderContainer{
+        width: 80%;
+        height: 50%;
+        flex:none;
+        margin: 20px 0;
+    }
+    .calenderContainer .flex div{
+        height: 70px;
+        width: 60px;
+    }
+    .calenderContainer .flex div p{
+        margin: 0;
+    }
+    .getStartedCall{
+        display: block;
+        background: #5F6FBF;
+        width: 17rem;
+        height: 3rem;
+        border:none;
+        color: #fff;
+        font-weight: 700;
+        border-radius: 5px;
+        margin: 20px 0;
+    }
+    .emailContainer{
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: space-between;
+        height:100%;
+    }
+    .emailMeDiv{
+        margin: 30px 0;
+        padding: 20px 0;
+        width: 80%;
+        /* height: 50%; */
+    }
+    .integratePageWrapper{
+        justify-content: center;
+    }
+    .integrateDetails{
+        align-items: center;
+    }
+    .integrateImg{
+        display: none;
+    }
+    .integrateMobImg{
+        display: block;
+        width: 252px;
+        height: 252px;
+    }
+    .talkDeveloper{
+        width: 100%;
+    }
+    .featuredService{
+        grid-template-columns: auto auto;
+    }
+    .featureSectionWrapper h1, 
+    .featureSectionWrapper p{
+        text-align: center;
+    }
+    .featureButton{
+        width: 100%;
+    }
+    .footerMenuList{
+        flex-direction: column;
+    }
+    .footerCopyRight{
+        flex-direction: column;
+    }
+    .footerApps{
+        align-items: flex-start;
+    }
+    .footerTerms{
+        flex-direction: column;
+    }
+    .footerSocial{
+        margin: 20px 0;
+    }
+    .footerCopyRight{
+        text-align: start;
+    }
+    .footerTerms p{
+        margin: 10px 0;
+    }
+    .footerCopyRight .copyrightYear{
+        display: none;
+    }
+    .mobcopyrightYear{
+        display: block;
+        text-align: center;
+    }
+}
+
+@media (max-width:810px) {
+    nav{
+        display: none;
+    }
+    .navWrapper .navMenu{
+        display: block;
+        float: right;
+        cursor: pointer;
+    }
+    .homeImage .mobImg{
+        width: 262px;
+        height: 262px;
+    }
+    .getInTouchWrapper .heading h1{
+        font-size: 28px;
+        text-align: center;
+    }
+    .getInTouchWrapper .heading p{
+        width: 100%;
+    }
+    .calenderContainer{
+        margin: 20px 0;
+        padding: 20px 0;
+    }
+    .calenderContainer p{
+        margin: 0;
+        width: 100%;
+    }
+    .calenderContainer .flex {
+        padding: 10px 0;
+    }
+    .calenderContainer .flex div{
+        width: 60px;
+        height: 70px;
+    }
+    .calenderContainer .flex div p{
+        font-size: 12px;
+    }
+    .emailMeDiv{
+        margin-bottom: 20px;
+    }
+    .featuredService{
+        gap:30px;
+    }
+    .featuredService div{
+        display: flex;
+        align-items: center;
+    }
+    .featuredService div p{
+        display: none;
+    }
+    .feedBackContainer .feedbackHeading{
+        width: 100%;
+    }
+}
+
+@media (max-width: 490px) {
+    .homeDetailHeader h1{
+        font-size: 32px;
+        width: 100%;
+    }
+    .homeDetail p{
+        width: 100%;
+        font-size: 14px;
+        text-align: center;
+        font-weight: 200;
+    }
+    .homeDetail h4{
+        font-size: 14px;
+        font-weight: 300;
+    }
+    .homeDetail button{
+        width: 100%;
+    }
+    .calenderContainer{
+        width: 100%;
+    }
+    .calenderContainer div p{
+        margin: 0;
+    }
+    .getCallsWrapper .heading h2{
+        font-size: 26px;
+        letter-spacing: 0;
+    }
+    .getCallsContainer{
+        width: 100%;
+    }
+    .calenderContainer{
+        flex: 0;
+    }
+    
+    .getEmailDetails{
+        flex: 0;
+    }
+    .emailContainer{
+        width: 100%;
+    }
+    .getCallsDetails{
+        flex:0;
+        width: 100%;
+        height: 100%;
+        margin: 50px 0;
+    }
+    .getCallsDetails p{
+        width: 100%;
+    }
+    .emailMeDiv{
+        flex: 0;
+        width: 100%;
+        height: 50%;
+        padding: 20px;
+        margin: 20px 0;
+    }
+    .emailMeDiv .emailInput{
+        height: 30px;
+    }
+    .emailMeDiv p{
+        font-size: 14px;
+    }
+    .emailMeDiv .emailInput{
+        width: 90%;
+    }
+    .integrateDetails h1{
+        font-size: 26px;
+        text-align: center;
+    }
+    .getInTouchContent .features button{
+        width: 100%;
+    }
+    .featuredService{
+        gap: 10px;
+    }
+    .featuredService div{
+        width: 150px;
+    }
+    .feedBackContainer .userInfo img{
+        width: 60px;
+        height: 60px;
+    }
+    .feedBackContainer .userInfo p{
+        font-size: 12px;
+    }
+    .feedBackContainer .feedbackContent{
+        font-size: 14px;
+        line-height: 18px;
+    }
+}
